@@ -10,12 +10,10 @@ import {
 import ProgressBar from '../ProgressBar';
 import ReactJson from 'react-json-view';
 
-export const OutputContainer = ({
-  classifyResults
-}) => {
+export const OutputContainer = ({ results: resultsData }) => {
   const [outputType, setOutputType] = useState('table');
 
-  const onOutputTypeChange = e => {
+  const onOutputTypeChange = (e) => {
     setOutputType(e.name);
   };
 
@@ -35,20 +33,21 @@ export const OutputContainer = ({
       <FormGroup legendText="Result">
         {outputType === 'table' ? (
           <Accordion>
-          <div className="output-container__accordian-header">
-            <p>Top Classes</p>
-            <p>Score</p>
-          </div>
-          {classifyResults.map(item =>
-            (
-              <div key={item.class} className="output-container__accordian-item">
-                <p>{item.class}</p>
+            <div className="output-container__accordian-header">
+              <p>Object</p>
+              <p>Score</p>
+            </div>
+            {resultsData.map((item, index) => (
+              <div
+                key={index}
+                className="output-container__accordian-item"
+              >
+                <p>{item.object}</p>
                 <ProgressBar progress={item.score} />
               </div>
-            )
-          )}
-        </Accordion>
-      ) : (
+            ))}
+          </Accordion>
+        ) : (
           <ReactJson
             name={false}
             enableClipboard={false}
@@ -58,20 +57,20 @@ export const OutputContainer = ({
             collapseStringsAfterLength={20}
             theme="monokai"
             style={{ lineHeight: '1.3em' }}
-            src={classifyResults}
+            src={resultsData}
           />
         )}
       </FormGroup>
     </Tile>
   );
-}
+};
 
 OutputContainer.propTypes = {
-  classifyResults: PropTypes.array.isRequired,
+  results: PropTypes.array.isRequired,
 };
 
 OutputContainer.defaultProps = {
-  classifyResults: null,
+  results: null,
 };
 
 export default OutputContainer;

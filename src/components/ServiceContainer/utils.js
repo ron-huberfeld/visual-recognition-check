@@ -1,9 +1,9 @@
-export const getTopTenClasses = (classifyResults) => {
-  const unsortedItems = classifyResults[0].classes;
-  const sortedItems = unsortedItems.sort((a, b) => b.score - a.score);
-  return sortedItems.slice(0,10);
-}
+export const parseResponse = (response) => {
+  // console.log(response.result.images[0])
+  return response.result.images[0].objects.collections[0].objects
+};
 
-export const parseClassifyResponse = (classifyResponse) => {
-  return classifyResponse.result.images[0].classifiers;
+export const getDetectedObjects = (response) => {
+  // console.log(response)
+  return response
 }

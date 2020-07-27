@@ -2,6 +2,7 @@
   "name": "@ibm-watson/visual-recognition-code-pattern",
   "version": "0.0.1",
   "proxy": "http://localhost:5000",
+  "homepage": "https://ron-huberfeld.github.io/visual-recognition-check/",
   "private": true,
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -14,6 +15,7 @@
     "ibm-watson": "^5.2.1",
     "morgan": "^1.9.1",
     "react-dropzone": "^10.2.1",
+    "react-responsive-carousel": "^3.2.9",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
@@ -25,6 +27,7 @@
     "carbon-components-react": "^7.9.0",
     "carbon-icons": "^7.0.7",
     "concurrently": "^5.0.2",
+    "gh-pages": "^3.1.0",
     "jest-puppeteer": "^4.4.0",
     "node-sass": "^4.13.0",
     "nodemon": "^2.0.2",
@@ -43,6 +46,7 @@
     "server": "nodemon server.js",
     "start": "node server.js",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "npm run test:components && npm run test:integration",
     "test:components": "cross-env CI=true react-scripts test --env=jsdom",
     "test:integration": "JEST_PUPPETEER_CONFIG='test/jest-puppeteer.config.js' jest test -c test/jest.config.js"

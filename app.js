@@ -1,4 +1,5 @@
-const VisualRecognitionV3 = require('ibm-watson/visual-recognition/v3');
+const VisualRecognitionV4 = require('ibm-watson/visual-recognition/v4');
+const { IamAuthenticator } = require('ibm-watson/auth');
 const path = require('path');
 const express = require('express');
 const app = express();
@@ -28,9 +29,14 @@ const parseBase64Image = (imageString) => {
 
 let client;
 try {
-  client = new VisualRecognitionV3({
+  client = new VisualRecognitionV4({
     // Remember to place the credentials in the .env file. Read the README.md file!
-    version: '2018-03-19',
+    version: '2020-07-20',
+    authenticator: new IamAuthenticator({
+      apikey: process.env.WATSON_VISION_COMBINED_APIKEY,
+    }),
+    url: process.env.WATSON_VISION_COMBINED_URL,
+    disableSslVerification: true,
   });
 } catch (err) {
   console.error('Error creating service client: ', err);
@@ -48,21 +54,23 @@ app.post('/api/classify', async (req, res, next) => {
   let imageFile;
   if (req.body.image_file) {
     imageFile = fs.createReadStream(`public/${req.body.image_file}`);
-  }
-  else if (req.body.image_data) {
+  } else if (req.body.image_data) {
     const resource = parseBase64Image(req.body.image_data);
     const temp = path.join(os.tmpdir(), `${uuid.v4()}.${resource.type}`);
     fs.writeFileSync(temp, resource.data);
     imageFile = fs.createReadStream(temp);
   }
-  const classifyParams = {
+  const params = {
     imagesFile: imageFile,
-    classifierIds: ['default']
+    collectionIds: ['d3122eb9-46c9-4f9e-97bb-572edfe60256'],
+    features: ['objects'],
+    threshold: '0.3',
   };
   try {
-    const response = await client.classify(classifyParams);
+    const response = await client.analyze(params);
+    // console.log(JSON.stringify(response.result, null, 2));
     res.json(response);
-  } catch(err) {
+  } catch (err) {
     console.error(err);
     if (!client) {
       const error = {

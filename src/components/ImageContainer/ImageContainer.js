@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import {
-  Tile,
-} from 'carbon-components-react';
+import { Tile } from 'carbon-components-react';
 import ImagePanel from '../ImagePanel/ImagePanel';
 
 export const ImageContainer = ({
@@ -10,6 +8,7 @@ export const ImageContainer = ({
   onSubmitImage,
   handleUnsupportedFormats,
   isClassifying,
+  results,
 }) => {
   let defaultImageUrl = '';
   if (images[0] && images[0].url) {
@@ -21,15 +20,19 @@ export const ImageContainer = ({
     const selectedImage = images[tileId].url;
     onSubmitImage({ image_file: selectedImage });
     setMainDisplayImage(selectedImage);
-  }
+  };
 
   const submitUserImage = (images) => {
     const image = images[0];
-    const acceptedImageTypes = ['image/gif','image/png','image/jpg','image/jpeg'];
+    const acceptedImageTypes = [
+      'image/gif',
+      'image/png',
+      'image/jpg',
+      'image/jpeg',
+    ];
     if (!acceptedImageTypes.includes(image.type)) {
       handleUnsupportedFormats();
-    }
-    else {
+    } else {
       const reader = new FileReader();
       reader.onabort = () => console.log('file reading was aborted');
       reader.onerror = () => console.log('file reading has failed');
@@ -37,25 +40,29 @@ export const ImageContainer = ({
         const imageData = reader.result;
         setMainDisplayImage(imageData);
         onSubmitImage({ image_data: imageData });
-      }
+      };
       reader.readAsDataURL(image);
     }
   };
 
   return (
     <Tile className="input-container">
-      <h4 className="container-title">Input</h4>
       <ImagePanel
         showLoader={isClassifying}
         viewerImage={mainDisplayImage}
         pickerImages={images}
-        onSelectTile={(tileId) => { submitSampleImage(tileId); }}
-        onUpload={(images) => { submitUserImage(images); }}
+        onSelectTile={(tileId) => {
+          submitSampleImage(tileId);
+        }}
+        onUpload={(images) => {
+          submitUserImage(images);
+        }}
+        locationData={results}
       />
-      <h4 className="container-footer">Select An Image to Analyze</h4>
+      {/* <h4 className="container-footer">Select An Image to Analyze</h4> */}
     </Tile>
   );
-}
+};
 
 ImageContainer.propTypes = {
   onSubmitImage: PropTypes.func.isRequired,

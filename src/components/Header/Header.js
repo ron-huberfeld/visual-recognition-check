@@ -5,7 +5,7 @@ import { Tile } from 'carbon-components-react';
 export const Header = ({ description, links, title }) => (
   <Tile className="header">
     <div className="title-container">
-      <h2 className="header-title">{title}</h2>
+      <h3 className="header-title">{title}</h3>
       <p>{description}</p>
     </div>
     <div className="link-container">
