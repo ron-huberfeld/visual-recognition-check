@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.db567354.chunk.css",
-    "main.js": "/static/js/main.5d5e26da.chunk.js",
-    "main.js.map": "/static/js/main.5d5e26da.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.533ca349.js",
-    "runtime-main.js.map": "/static/js/runtime-main.533ca349.js.map",
-    "static/js/2.6dbcdc8b.chunk.js": "/static/js/2.6dbcdc8b.chunk.js",
-    "static/js/2.6dbcdc8b.chunk.js.map": "/static/js/2.6dbcdc8b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a26a8ff2f80e2b6d0a2932794fcf46bf.js": "/precache-manifest.a26a8ff2f80e2b6d0a2932794fcf46bf.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.db567354.chunk.css.map": "/static/css/main.db567354.chunk.css.map",
-    "static/js/2.6dbcdc8b.chunk.js.LICENSE.txt": "/static/js/2.6dbcdc8b.chunk.js.LICENSE.txt"
+    "main.css": "/visual-recognition-check/static/css/main.33294466.chunk.css",
+    "main.js": "/visual-recognition-check/static/js/main.72b9666a.chunk.js",
+    "main.js.map": "/visual-recognition-check/static/js/main.72b9666a.chunk.js.map",
+    "runtime-main.js": "/visual-recognition-check/static/js/runtime-main.b64fc3bb.js",
+    "runtime-main.js.map": "/visual-recognition-check/static/js/runtime-main.b64fc3bb.js.map",
+    "static/css/2.fb346933.chunk.css": "/visual-recognition-check/static/css/2.fb346933.chunk.css",
+    "static/js/2.daeb122f.chunk.js": "/visual-recognition-check/static/js/2.daeb122f.chunk.js",
+    "static/js/2.daeb122f.chunk.js.map": "/visual-recognition-check/static/js/2.daeb122f.chunk.js.map",
+    "index.html": "/visual-recognition-check/index.html",
+    "precache-manifest.9805616089320f1ccd0a039bffaf7f96.js": "/visual-recognition-check/precache-manifest.9805616089320f1ccd0a039bffaf7f96.js",
+    "service-worker.js": "/visual-recognition-check/service-worker.js",
+    "static/css/2.fb346933.chunk.css.map": "/visual-recognition-check/static/css/2.fb346933.chunk.css.map",
+    "static/css/main.33294466.chunk.css.map": "/visual-recognition-check/static/css/main.33294466.chunk.css.map",
+    "static/js/2.daeb122f.chunk.js.LICENSE.txt": "/visual-recognition-check/static/js/2.daeb122f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.533ca349.js",
-    "static/js/2.6dbcdc8b.chunk.js",
-    "static/css/main.db567354.chunk.css",
-    "static/js/main.5d5e26da.chunk.js"
+    "static/js/runtime-main.b64fc3bb.js",
+    "static/css/2.fb346933.chunk.css",
+    "static/js/2.daeb122f.chunk.js",
+    "static/css/main.33294466.chunk.css",
+    "static/js/main.72b9666a.chunk.js"
   ]
 }
