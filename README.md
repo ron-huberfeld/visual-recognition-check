@@ -15,7 +15,7 @@
 ### Flow
 
 <p align="center">
-  <img alt="architecture" width="600" src="./public/architecture.png">
+  <img alt="architecture" width="600" src="./public/use-case.png">
 </p>
 
 1. User sends messages to the application (running locally, in the IBM Cloud).
