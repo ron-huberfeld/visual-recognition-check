@@ -53,7 +53,7 @@ app.get('/health', (req, res) => {
 app.post('/api/classify', async (req, res, next) => {
   let imageFile;
   if (req.body.image_file) {
-    imageFile = fs.createReadStream(`public/${req.body.image_file}`);
+    imageFile = fs.createReadStream(`${process.env.PUBLIC_URL}/${req.body.image_file}`);
   } else if (req.body.image_data) {
     const resource = parseBase64Image(req.body.image_data);
     const temp = path.join(os.tmpdir(), `${uuid.v4()}.${resource.type}`);
