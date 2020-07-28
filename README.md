@@ -15,7 +15,7 @@ Also, the application can provide potential customers information related to how
 A potential customer in a Mall can check through his application in which shops she can enter. By passing in front of the shop, the application will take into account the situation inside the shop and also eventual co-morbidities and general health of the customer and display a color code for that shop that is personalized for the her: Green if it's ok to come in without worry, Yellow if it's a small risk, Red if entrance is not safe.
 ### The Aplication So Far
 Main Screen:
-[Main Screen](public/main-app.png)
+![Main Screen](public/main-app.png)
 
 ### Aplication Structure
 
