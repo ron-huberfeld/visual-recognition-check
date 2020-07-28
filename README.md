@@ -8,8 +8,9 @@
     <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
   </a>
 </p>
+<iframe frameborder="0" width="560" height="315" src="https://biteable.com/watch/embed/codecovout-2662382" allowfullscreen="true" allow="autoplay"> </iframe> 
+<p><a href="https://biteable.com/watch/codecovout-2662382">CovItOut</a> on <a href="https://biteable.com">Biteable</a>.</p>
 </p>
-<iframe frameborder="0" width="560" height="315" src="https://biteable.com/watch/embed/codecovout-2662382" allowfullscreen="true" allow="autoplay"> </iframe> <p><a href="https://biteable.com/watch/codecovout-2662382">CovItOut</a> on <a href="https://biteable.com">Biteable</a>.</p>
 
 COVID-19 has so far affected several million lives and businesses across the world. It is vital that we  develop the tools we need so we can return to an economic life as close to normal as possible, while fully protecting our lives and the lives of those around us.
 Our solution checks how well the risk of COVID spread is mitigated in buildings, be it offices, malls, small shops, schools, etc. We designed it to be able to be deployed easily in a large variety of places, and to be very easy to use. It doesn't need extra hardware other than access to the feed from the existing security cameras. It is enough to efficiently and effectively assess the situation and warn when the risk of infection grows.
