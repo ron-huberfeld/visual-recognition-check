@@ -1,8 +1,6 @@
 <h1 align="center" style="border-bottom: none;"> CovItOut </h1>
 <h3 align="center">CovItOut uses deep learning algorithms to analyze input from security cameras in order to check how well the risk of COVID spread is mitigated in buildings, be it offices, malls, small shops, schools.</h3>
-<p align="center">
-<iframe frameborder="0" width="560" height="315" src="https://biteable.com/watch/embed/codecovout-2662382" allowfullscreen="true" allow="autoplay"> </iframe> 
-<p><a href="https://biteable.com/watch/codecovout-2662382">CovItOut</a> on <a href="https://biteable.com">Biteable</a>.</p>
+
 </p>
 </p>
 
@@ -11,7 +9,7 @@ Our solution checks how well the risk of COVID spread is mitigated in buildings,
 From the security cameras footage, we can detect when workers or customers inside the building are not wearing masks, or are not keeping the proper distance. Uniquely to our solution, we take into account the growing number of scientists who argue that COVID-19 spreads through airborne micro-particles (aerosols) and we devised an algorithm to estimate the number of micro-particles in the air.
 According to the Health Ministry guidelines in combination to the severity of the virus infection in each place (information obtained from MiPasa data), the application alerts the manager (or designated person) of the potential dangerous situation so the appropriate measures will be taken.
 Also, the application can provide potential customers information related to how safe it is to enter the building. This can be displayed on the website of the company, on a screen at the entrance or trough an application on the customer's phone. 
-
+[![Watch the video](public/video.png)](https://biteable.com/watch/embed/codecovout-2662382)
 ### Example of usage for the mobile app
 A potential customer in a Mall can check through his application in which shops she can enter. By passing in front of the shop, the application will take into account the situation inside the shop and also eventual co-morbidities and general health of the customer and display a color code for that shop that is personalized for the her: Green if it's ok to come in without worry, Yellow if it's a small risk, Red if entrance is not safe.
 
