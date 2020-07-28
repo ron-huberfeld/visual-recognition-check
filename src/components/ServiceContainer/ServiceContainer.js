@@ -4,7 +4,7 @@ import ImageContainer from '../ImageContainer';
 import Toast from '../Toast';
 import { parseResponse, getDetectedObjects } from './utils';
 import sampleImages from '../../data/sampleImages.json';
-import CarouselContainer from '../CarouselContainer/CarouselContainer';
+// import CarouselContainer from '../CarouselContainer/CarouselContainer';
 // import defaultResponse from '../../data/mockClassifyResponse.json';
 
 const GDPR_DISCLAIMER =
