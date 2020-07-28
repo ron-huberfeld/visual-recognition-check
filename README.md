@@ -1,9 +1,7 @@
 <h1 align="center" style="border-bottom: none;"> CovItOut </h1>
 <h3 align="center">CovItOut uses deep learning algorithms to analyze input from security cameras in order to check how well the risk of COVID spread is mitigated in buildings, be it offices, malls, small shops, schools.</h3>
 
-</p>
-</p>
-![Watch the video](public/video.png)(https://biteable.com/watch/embed/codecovout-2662382)
+[![Watch the video](public/video.png)](https://biteable.com/watch/embed/codecovout-2662382)
 
 COVID-19 has so far affected several million lives and businesses across the world. It is vital that we  develop the tools we need so we can return to an economic life as close to normal as possible, while fully protecting our lives and the lives of those around us.
 Our solution checks how well the risk of COVID spread is mitigated in buildings, be it offices, malls, small shops, schools, etc. We designed it to be able to be deployed easily in a large variety of places, and to be very easy to use. It doesn't need extra hardware other than access to the feed from the existing security cameras. It is enough to efficiently and effectively assess the situation and warn when the risk of infection grows.
