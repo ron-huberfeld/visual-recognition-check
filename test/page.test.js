@@ -7,7 +7,7 @@ describe('app', () => {
   });
 
 
-  it('should display the Vis Rec logo', async () => {
-    await expect(page).toMatch('Visual Recognition');
+  it('should display CovItOut homepage', async () => {
+    await expect(page).toMatch('CovItOut');
   });
 });
