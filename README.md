@@ -22,10 +22,22 @@ Main Screen:
 </p>
 
 ### Roadmap
-Much remains to be developed. This is our roadmap for the near future:
-<p align="center">
-  <img alt="Roadmap" width="600" src="./public/SimpleRoadmap.png">
-</p>
+Much remains to be developed. Until now in the first stage we aimed for basic functionality.
+1. Model training
+2. Mask detection
+3. Website development
+
+In the second stage we want to implement advanced functionality:
+1. COVID-19 aerosol transmission estimation
+2. Social Distance measurement
+3. Access to COVID data from MiPasa
+4. Messaging
+
+In the third stage we want to develop the mobile application
+1. Mobile deveopment
+2. User risk factor estimate
+3. Watson Assistant Connection
+4. Language translation
 
 ## Prerequisites
 
